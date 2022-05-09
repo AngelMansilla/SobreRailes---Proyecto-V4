@@ -1,0 +1,173 @@
+* {
+  box-sizing: inherit;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    'header header header'
+    'main main main'
+    'main main main'
+    'main main main'
+    'main main main'
+    'main main main'
+    'main main main'
+    'main main main'
+    'main main main'
+    'main main main'
+    'main main main'
+    'main main main'
+    'main main main'
+    'footer footer footer';
+  background-color: #0066B3;
+}
+
+.cabecera {
+  grid-area: header;
+  background: linear-gradient(to bottom, #0066B3, #199CFF 80%, #0066B3);
+  border: solid 3px #0066B3;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.main {
+  grid-area: main;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.main__section {
+  width: 80%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.main__section__header {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  background-color: #B36F09;
+  border-radius: 5px;
+}
+
+.main__section__header__seleccion {
+  background-color: #FFA319;
+  border: solid 3px #B36F09;
+  border-radius: 10px;
+  margin: 5px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.main__section__header__seleccion__lugar {
+  border: solid 3px #B36F09;
+  border-radius: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.main__section__header__seleccion__fecha {
+  border: solid 3px #B36F09;
+  border-radius: 10px;
+  padding-left: 15px
+}
+
+.main__section__ofertas__header {
+  background-color: #B36F09;
+  border: solid 3px #B36F09;
+  border-radius: 5px;
+  display: flex;
+  padding: 5px;
+  margin-top: 20px;
+  justify-content: space-between;
+  position: sticky;
+  top: 88px;
+}
+
+.main__section__ofertas__header__span {
+  background-color: #FFA319;
+  border: solid 3px rgb(71, 71, 71);
+  border-radius: 10px;
+  padding: 5px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+}
+
+.main__section__ofertas__billete {
+  background: linear-gradient(to bottom, #0066B3, #199CFF 80%, #0066B3);
+  border: solid 3px #0066B3;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__section__ofertas__billete__span {
+  background-color: white;
+  border: solid 3px #0066B3;
+  padding: 5px;
+  border-radius: 10px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__aside--left {
+  width: 20%;
+}
+
+.main__aside--right {
+  width: 20%;
+}
+
+.main__aside__img {
+  width: 96%;
+  border: solid 2px #B36F09;
+  margin-bottom: 1%;
+  height: 200px;
+}
+
+
+
+@media (max-width: 740px) {
+
+  .main__section__header * {
+    width: 74%;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+@media (max-width: 540px) {
+
+  .main__section__header * {
+    width: 74%;
+  }
+
+  .main__section__ofertas {
+    font-size: 10px;
+  }
+
+  .main__section__ofertas__header {
+    width: 100%;
+  }
+
+}

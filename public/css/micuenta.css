@@ -1,0 +1,16 @@
+
+.btn-modify {
+  background: linear-gradient(to bottom, #0066B3, #199CFF 80%, #0066B3);
+  border: solid 3px #0066B3;
+  color: white;
+}
+
+.btn-back {
+  background: linear-gradient(to bottom, #B36F09, #faae3c 80%, #B36F09);
+  border: solid 3px #B36F09;
+  color: white;
+}
+
+.b-from {
+  border: solid 5px #B36F09;
+}

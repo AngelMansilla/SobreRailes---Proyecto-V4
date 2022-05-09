@@ -1,0 +1,118 @@
+* {
+  box-sizing: inherit;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    'header header header'
+    'main main main'
+    'main main main'
+    'main main main'
+    'main main main'
+    'main main main'
+    'main main main'
+    'main main main'
+    'main main main'
+    'main main main'
+    'main main main'
+    'main main main'
+    'main main main'
+    'footer footer footer';
+  background-color: #0066B3;
+}
+
+.cabecera {
+  grid-area: header;
+  width: 100%;
+  background: linear-gradient(to bottom, #0066B3, #199CFF 80%, #0066B3);
+  border: solid 3px #0066B3;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+li, ul {
+  list-style: none;
+}
+
+.main__section__ul {
+  background-color: #B36F09;
+  padding: 2%;
+  border: 2px solid black;
+  border-radius: 5%;
+}
+
+.main__section__ul__lading {
+  background-color: #199CFF;
+  margin-top: 5px;
+}
+
+.main__section__ul__lading__ul__login {
+  background-color: #FFA319;
+  margin-left: 5%;
+  margin-top: 5px;
+}
+
+.main__section__ul__lading__ul__login__ul__bucarticket, .main__section__ul__lading__ul__login__ul__mapaweb, .main__section__ul__lading__ul__login__ul__juego, .main__section__ul__lading__ul__login__ul__micuenta {
+  background-color: #199CFF;
+  margin-left: 10%;
+  margin-top: 5px;
+}
+
+.main__section__ul__lading__ul__login__ul__micuenta__ul__datos, .main__section__ul__lading__ul__login__ul__micuenta__ul__historial {
+  background-color: #FFA319;
+  margin-left: 15%;
+  margin-top: 5px;
+}
+
+.main__section__ul__lading__ul__registrarse {
+  background-color: #FFA319;
+  margin-left: 5%;
+  margin-top: 5px;
+}
+
+
+.main {
+  grid-area: main;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.main__section {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
+.main__aside--left {
+  width: 20%;
+}
+
+.main__aside--right {
+  width: 20%;
+}
+
+.main__aside__img {
+  width: 96%;
+  border: solid 2px #B36F09;
+  margin-bottom: 1%;
+  height: 200px;
+}
+
+
+@media (max-width: 700px) {
+  .main {
+    width: 100%;
+  }
+
+  .main__section__header__seleccion__lugar {
+    width: 70%;
+  }
+
+  .main__section {
+    margin: auto
+  }
+
+}
